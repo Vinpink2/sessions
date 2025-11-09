@@ -1,19 +1,17 @@
 {
-    "description": "session generator",
-    "main": "./index.js",
+    "description": "dave-session",
+    "main": "./voltah.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node index.js"
+    "start": "node voltah.js"
   },
-  "author": "dave",
+  "author": "davr",
   "license": "GPL-3.0 license",
   "dependencies": {
-    "baileys-pro": "latest",
-    "maher-zubair-baileys": "^6.6.5",
-            "@whiskeysockets/baileys":"github:Tennor-modz/MD-Baileys-",
+    "@whiskeysockets/baileys":"^6.7.21",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
@@ -22,7 +20,6 @@
     "pastebin-js": "^1.0.6",
     "express": "^4.18.1",
     "path": "^0.12.7",
-    "baileys-elite" : "latest",
-    "jimp": "^0.16.13"
+    "jimp": "latest"
    }
 }
