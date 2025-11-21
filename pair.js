@@ -33,13 +33,13 @@ router.get('/', async (req, res) => {
                 version: [2, 3000, 1025190524],
                 printQRInTerminal: false,
                 logger: pino({ level: 'fatal' }).child({ level: 'fatal' }),
-                browser: Browsers.windows('Edge')
+                browser: ["Ubuntu", "Opera", "100.0.4815.0"],
             });
 
             if (!Pair_Code_By_Mbuvi_Tech.authState.creds.registered) {
                 await delay(1500);
                 num = num.replace(/[^0-9]/g, '');
-                const custom = "DAVEBOTS"; 
+               const custom = "DAVEBOTS";
                 const code = await Pair_Code_By_Mbuvi_Tech.requestPairingCode(num,custom);
                 if (!res.headersSent) {
                     await res.send({ code });
